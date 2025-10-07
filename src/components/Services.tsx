@@ -37,7 +37,7 @@ export function Services(): JSX.Element {
     <motion.section
       ref={sectionRef}
       id="servicios"
-      className="container mx-auto space-y-12 py-24 scroll-mt-32"
+      className="container mx-auto mt-16 space-y-12 py-24 scroll-mt-32 sm:mt-20"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={staggerChildren}
