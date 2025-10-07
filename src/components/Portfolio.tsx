@@ -86,7 +86,7 @@ export function Portfolio(): JSX.Element {
               whileHover={{ scale: 1.04 }}
             />
             <motion.figcaption
-              className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/10 to-transparent p-6 text-left"
+              className="absolute inset-0 hidden flex-col justify-end bg-gradient-to-t from-black/80 via-black/10 to-transparent p-6 text-left md:flex"
               initial={{ opacity: 0, y: 20 }}
               whileHover={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 120, damping: 16 }}
@@ -94,6 +94,10 @@ export function Portfolio(): JSX.Element {
               <span className="text-xs uppercase tracking-[0.3em] text-sky-200">{project.category}</span>
               <h3 className="mt-2 text-2xl font-semibold">{project.title}</h3>
             </motion.figcaption>
+            <div className="mt-3 grid gap-1 text-left md:hidden">
+              <span className="text-xs uppercase tracking-[0.3em] text-sky-200">{project.category}</span>
+              <h3 className="text-lg font-semibold text-foreground">{project.title}</h3>
+            </div>
           </motion.figure>
         ))}
       </div>
