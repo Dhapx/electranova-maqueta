@@ -2,9 +2,10 @@
  * Portfolio.tsx
  * Galería responsive con animaciones on-scroll y hover zoom para proyectos destacados.
  */
-import { useRef } from "react";
+import { useCallback, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { imageReveal, staggerChildren, fadeUp } from "@/lib/animations";
+import { cn } from "@/lib/utils";
 
 const projects = [
   {
@@ -48,6 +49,19 @@ const projects = [
 export function Portfolio(): JSX.Element {
   const ref = useRef<HTMLElement | null>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+  const [active, setActive] = useState<string | null>(null);
+
+  const activate = useCallback((id: string) => {
+    setActive(id);
+  }, []);
+
+  const toggleActive = useCallback((id: string) => {
+    setActive((prev) => (prev === id ? null : id));
+  }, []);
+
+  const deactivate = useCallback(() => {
+    setActive(null);
+  }, []);
 
   return (
     <motion.section
@@ -71,12 +85,28 @@ export function Portfolio(): JSX.Element {
       </motion.div>
 
       <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">
-        {projects.map((project, index) => (
+        {projects.map((project, index) => {
+          const isActive = active === project.id;
+          return (
           <motion.figure
             key={project.id}
             className="group relative mb-6 overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
             variants={imageReveal}
             transition={{ delay: index * 0.08 }}
+            tabIndex={0}
+            role="button"
+            aria-pressed={isActive}
+            onHoverStart={() => activate(project.id)}
+            onHoverEnd={deactivate}
+            onFocus={() => activate(project.id)}
+            onBlur={deactivate}
+            onTap={() => toggleActive(project.id)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                toggleActive(project.id);
+              }
+            }}
           >
             <motion.img
               src={project.image}
@@ -86,20 +116,24 @@ export function Portfolio(): JSX.Element {
               whileHover={{ scale: 1.04 }}
             />
             <motion.figcaption
-              className="absolute inset-0 hidden flex-col justify-end bg-gradient-to-t from-black/80 via-black/10 to-transparent p-6 text-left md:flex"
-              initial={{ opacity: 0, y: 20 }}
-              whileHover={{ opacity: 1, y: 0 }}
-              transition={{ type: "spring", stiffness: 120, damping: 16 }}
+              className={cn(
+                "pointer-events-none absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/10 to-transparent p-6 text-left",
+                "opacity-0 md:opacity-0"
+              )}
+              initial={false}
+              animate={
+                isActive
+                  ? { opacity: 1, y: 0 }
+                  : { opacity: 0, y: 24 }
+              }
+              transition={{ type: "spring", stiffness: 150, damping: 18 }}
             >
               <span className="text-xs uppercase tracking-[0.3em] text-sky-200">{project.category}</span>
               <h3 className="mt-2 text-2xl font-semibold">{project.title}</h3>
             </motion.figcaption>
-            <div className="mt-3 grid gap-1 text-left md:hidden">
-              <span className="text-xs uppercase tracking-[0.3em] text-sky-200">{project.category}</span>
-              <h3 className="text-lg font-semibold text-foreground">{project.title}</h3>
-            </div>
           </motion.figure>
-        ))}
+        );
+        })}
       </div>
     </motion.section>
   );
