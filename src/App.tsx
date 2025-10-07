@@ -84,7 +84,7 @@ export default function App(): JSX.Element {
         {/* Barra fija con CTA y cambio de tema para mantener acciones clave siempre visibles */}
         <Navigation />
         <ContactBar />
-        <main className="relative z-10 space-y-16">
+        <main className="relative z-10 space-y-24 lg:space-y-28">
           {/* Secciones principales bien diferenciadas para cumplir la jerarquía solicitada */}
           <Hero />
           <Services />
