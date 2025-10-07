@@ -1,0 +1,71 @@
+/**
+ * globals.css
+ * Estilos globales y tokens CSS para la maqueta, incluyendo variables de color y efectos de background.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 8%;
+  --foreground: 210 40% 98%;
+  --card: 223 47% 9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 223 47% 9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 199 91% 55%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 263 85% 68%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 220 15% 20%;
+  --muted-foreground: 215 20% 70%;
+  --accent: 192 95% 68%;
+  --accent-foreground: 210 40% 98%;
+  --border: 215 27% 22%;
+  --input: 215 27% 22%;
+  --ring: 199 91% 55%;
+  --radius: 1rem;
+  color-scheme: dark;
+}
+
+.light {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 8%;
+  --card: 210 40% 100%;
+  --card-foreground: 222 47% 8%;
+  --popover: 210 40% 100%;
+  --popover-foreground: 222 47% 8%;
+  --primary: 199 89% 48%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 263 77% 52%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 214 32% 91%;
+  --muted-foreground: 222 20% 35%;
+  --accent: 192 85% 45%;
+  --accent-foreground: 210 40% 98%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 199 89% 48%;
+  color-scheme: light;
+}
+
+html {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  @apply bg-background text-foreground;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.12), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(139, 92, 246, 0.18), transparent 55%),
+    radial-gradient(circle at 50% 80%, rgba(236, 72, 153, 0.12), transparent 55%);
+  background-attachment: fixed;
+}
+
+.glass-surface {
+  @apply bg-white/5 dark:bg-slate-950/60 backdrop-blur-lg border border-white/10;
+}
+
+.light .glass-surface {
+  @apply bg-white/70 border-white/40;
+}
