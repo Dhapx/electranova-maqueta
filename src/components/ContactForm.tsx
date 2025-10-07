@@ -58,7 +58,7 @@ export function ContactForm(): JSX.Element {
   return (
     <motion.section
       id="contacto"
-      className="container mx-auto grid gap-10 py-24 lg:grid-cols-2"
+      className="container mx-auto grid gap-10 py-24 lg:grid-cols-2 scroll-mt-32"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-120px" }}

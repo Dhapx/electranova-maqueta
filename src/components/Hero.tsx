@@ -31,7 +31,7 @@ export function Hero(): JSX.Element {
   return (
     <section
       id="inicio"
-      className="relative isolate overflow-hidden pt-24 sm:pt-28 lg:pt-36"
+      className="relative isolate overflow-hidden scroll-mt-32 pt-28 sm:pt-32 lg:pt-40"
       aria-labelledby="hero-heading"
     >
       <div className="pointer-events-none absolute inset-x-0 -top-40 flex justify-center blur-3xl">

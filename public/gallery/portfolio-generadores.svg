@@ -1,0 +1,34 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Generadores duales para hospitales sin cortes</title>
+  <desc id="desc">Ilustración futurista de generadores eléctricos industriales iluminados.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" rx="64" fill="url(#bg)"/>
+  <rect x="140" y="360" width="620" height="360" rx="36" fill="#0f172a" opacity="0.55"/>
+  <rect x="180" y="400" width="540" height="280" rx="28" fill="#0f172a" stroke="url(#accent)" stroke-width="4"/>
+  <rect x="220" y="460" width="180" height="160" rx="18" fill="#0b1120"/>
+  <rect x="500" y="460" width="180" height="160" rx="18" fill="#0b1120"/>
+  <circle cx="310" cy="540" r="62" fill="#1e293b" stroke="url(#accent)" stroke-width="4"/>
+  <circle cx="590" cy="540" r="62" fill="#1e293b" stroke="url(#accent)" stroke-width="4"/>
+  <rect x="275" y="525" width="70" height="12" rx="6" fill="#38bdf8"/>
+  <rect x="555" y="525" width="70" height="12" rx="6" fill="#38bdf8"/>
+  <rect x="220" y="640" width="460" height="16" rx="8" fill="#38bdf8" opacity="0.6"/>
+  <rect x="420" y="480" width="60" height="120" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="412" y="450" width="76" height="20" rx="10" fill="url(#accent)"/>
+  <path d="M280 720H620" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-dasharray="8 14" opacity="0.8"/>
+  <path d="M180 360L720 360" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-dasharray="6 18"/>
+  <circle cx="180" cy="360" r="12" fill="#38bdf8"/>
+  <circle cx="720" cy="360" r="12" fill="#a855f7"/>
+  <path d="M450 260L420 320H456L418 400" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="320" y="820" width="260" height="12" rx="6" fill="#38bdf8" opacity="0.35"/>
+  <rect x="300" y="860" width="300" height="8" rx="4" fill="#a855f7" opacity="0.35"/>
+</svg>

@@ -8,40 +8,40 @@ import { imageReveal, staggerChildren, fadeUp } from "@/lib/animations";
 
 const projects = [
   {
-    id: "circuitos",
-    title: "Campus corporativo sin interrupciones",
-    category: "Continuidad operativa",
-    image: "/gallery/placeholder-1.jpg"
+    id: "generadores",
+    title: "Generadores duales para hospitales sin cortes",
+    category: "Respaldo energético",
+    image: "/gallery/portfolio-generadores.svg"
   },
   {
-    id: "industria",
-    title: "Automatización de planta alimentaria",
-    category: "Industria 4.0",
-    image: "https://picsum.photos/seed/electra1/640/720"
+    id: "subestacion",
+    title: "Subestación modular con monitoreo térmico",
+    category: "Plantas eléctricas",
+    image: "/gallery/portfolio-subestacion.svg"
   },
   {
-    id: "domotica",
-    title: "Residencias con domótica integral",
-    category: "Smart Living",
-    image: "https://picsum.photos/seed/electra2/640/720"
+    id: "taller",
+    title: "Taller eléctrico con protocolos lean",
+    category: "Mantenimiento especializado",
+    image: "/gallery/portfolio-taller.svg"
   },
   {
-    id: "energia",
-    title: "Auditoría energética multisitio",
-    category: "Eficiencia y sostenibilidad",
-    image: "/gallery/placeholder-2.jpg"
-  },
-  {
-    id: "tableros",
-    title: "Tableros inteligentes con IA",
-    category: "Ingeniería avanzada",
-    image: "https://picsum.photos/seed/electra3/640/720"
+    id: "automatizacion",
+    title: "Tableros inteligentes para líneas críticas",
+    category: "Automatización industrial",
+    image: "/gallery/portfolio-tableros.svg"
   },
   {
     id: "microgrid",
     title: "Microgrid híbrida para data center",
     category: "Infraestructura crítica",
-    image: "/gallery/placeholder-3.jpg"
+    image: "/gallery/portfolio-microgrid.svg"
+  },
+  {
+    id: "domotica",
+    title: "Domótica energética para residencias premium",
+    category: "Edificios inteligentes",
+    image: "/gallery/portfolio-domotica.svg"
   }
 ];
 
@@ -53,7 +53,7 @@ export function Portfolio(): JSX.Element {
     <motion.section
       id="portafolio"
       ref={ref}
-      className="container mx-auto space-y-12 py-24"
+      className="container mx-auto space-y-12 py-24 scroll-mt-32"
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={staggerChildren}

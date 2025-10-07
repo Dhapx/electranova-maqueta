@@ -1,0 +1,46 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Subestación modular con monitoreo térmico</title>
+  <desc id="desc">Ilustración de una subestación eléctrica con transformadores y sensores térmicos.</desc>
+  <defs>
+    <linearGradient id="bg-sub" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" rx="64" fill="url(#bg-sub)"/>
+  <g filter="url(#shadow)">
+    <rect x="140" y="380" width="620" height="360" rx="32" fill="#0b1120" opacity="0.75"/>
+  </g>
+  <rect x="180" y="430" width="540" height="260" rx="24" fill="#0f172a" stroke="#38bdf8" stroke-width="4"/>
+  <rect x="220" y="470" width="110" height="180" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="360" y="470" width="110" height="180" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="500" y="470" width="110" height="180" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="640" y="470" width="60" height="180" rx="16" fill="#0b1120" stroke="url(#heat)" stroke-width="4"/>
+  <rect x="205" y="420" width="460" height="20" rx="10" fill="url(#heat)" opacity="0.8"/>
+  <path d="M250 660C250 640 266 624 286 624H514C534 624 550 640 550 660" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="250" cy="660" r="12" fill="#38bdf8"/>
+  <circle cx="550" cy="660" r="12" fill="#38bdf8"/>
+  <path d="M250 520L310 520" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-dasharray="6 10"/>
+  <path d="M390 520L450 520" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-dasharray="6 10"/>
+  <path d="M530 520L590 520" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-dasharray="6 10"/>
+  <circle cx="670" cy="520" r="32" fill="#0b1120" stroke="url(#heat)" stroke-width="6"/>
+  <path d="M670 488L682 508H658L670 528" stroke="#fb7185" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="310" y="760" width="280" height="12" rx="6" fill="#38bdf8" opacity="0.3"/>
+  <rect x="290" y="800" width="320" height="8" rx="4" fill="#fb7185" opacity="0.3"/>
+  <defs>
+    <filter id="shadow" x="60" y="320" width="780" height="520" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="32"/>
+      <feOffset dy="24"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.094 0 0 0 0 0.152 0 0 0 0 0.243 0 0 0 0.45 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>

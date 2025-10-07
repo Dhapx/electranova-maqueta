@@ -1,0 +1,40 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Microgrid híbrida para data center</title>
+  <desc id="desc">Representación de una microgrid con almacenamiento, solar y distribución inteligente.</desc>
+  <defs>
+    <linearGradient id="bg-microgrid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="solar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" rx="64" fill="url(#bg-microgrid)"/>
+  <rect x="160" y="380" width="580" height="360" rx="30" fill="#0b1120" opacity="0.7"/>
+  <rect x="200" y="420" width="500" height="140" rx="24" fill="#0f172a" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="240" y="460" width="180" height="60" rx="12" fill="#0b1120" stroke="#22d3ee" stroke-width="2"/>
+  <rect x="480" y="460" width="180" height="60" rx="12" fill="#0b1120" stroke="#22d3ee" stroke-width="2"/>
+  <path d="M320 420L320 360" stroke="url(#solar)" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <path d="M580 420L580 360" stroke="url(#solar)" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <rect x="260" y="330" width="120" height="24" rx="12" fill="url(#solar)"/>
+  <rect x="520" y="330" width="120" height="24" rx="12" fill="url(#solar)"/>
+  <rect x="220" y="600" width="120" height="110" rx="20" fill="#111c2d" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="390" y="600" width="120" height="110" rx="20" fill="#111c2d" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="560" y="600" width="120" height="110" rx="20" fill="#111c2d" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M280 620L330 560L380 620" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M450 620L500 560L550 620" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M620 620L670 560L720 620" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M280 700C314 660 346 700 380 660C414 620 446 700 480 660C514 620 546 700 580 660C614 620 646 700 680 660" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="310" cy="780" r="26" fill="#0b1120" stroke="#22d3ee" stroke-width="4"/>
+  <circle cx="450" cy="780" r="26" fill="#0b1120" stroke="#22d3ee" stroke-width="4"/>
+  <circle cx="590" cy="780" r="26" fill="#0b1120" stroke="#22d3ee" stroke-width="4"/>
+  <path d="M310 780L450 780L590 780" stroke="url(#flow)" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 14"/>
+  <rect x="320" y="880" width="260" height="12" rx="6" fill="#22d3ee" opacity="0.3"/>
+  <rect x="300" y="920" width="300" height="8" rx="4" fill="#38bdf8" opacity="0.3"/>
+</svg>

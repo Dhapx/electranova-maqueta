@@ -1,0 +1,32 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tableros inteligentes para líneas críticas</title>
+  <desc id="desc">Panel eléctrico digital con indicadores y flujos de energía.</desc>
+  <defs>
+    <linearGradient id="bg-tableros" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" rx="64" fill="url(#bg-tableros)"/>
+  <rect x="150" y="320" width="600" height="460" rx="34" fill="#0b1120" stroke="#22d3ee" stroke-width="3" opacity="0.85"/>
+  <rect x="210" y="380" width="480" height="100" rx="18" fill="#111827" stroke="#22d3ee" stroke-width="2"/>
+  <rect x="210" y="500" width="100" height="220" rx="18" fill="#111827" stroke="#a855f7" stroke-width="2"/>
+  <rect x="330" y="500" width="100" height="220" rx="18" fill="#111827" stroke="#a855f7" stroke-width="2"/>
+  <rect x="450" y="500" width="100" height="220" rx="18" fill="#111827" stroke="#a855f7" stroke-width="2"/>
+  <rect x="570" y="500" width="100" height="220" rx="18" fill="#111827" stroke="#a855f7" stroke-width="2"/>
+  <path d="M240 420H660" stroke="url(#pulse)" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <circle cx="280" cy="420" r="10" fill="#22d3ee"/>
+  <circle cx="620" cy="420" r="10" fill="#a855f7"/>
+  <rect x="226" y="532" width="48" height="140" rx="12" fill="#111c2d" stroke="#22d3ee" stroke-width="2"/>
+  <rect x="346" y="532" width="48" height="140" rx="12" fill="#111c2d" stroke="#22d3ee" stroke-width="2"/>
+  <rect x="466" y="532" width="48" height="140" rx="12" fill="#111c2d" stroke="#22d3ee" stroke-width="2"/>
+  <rect x="586" y="532" width="48" height="140" rx="12" fill="#111c2d" stroke="#22d3ee" stroke-width="2"/>
+  <path d="M210 770H690" stroke="url(#pulse)" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  <path d="M250 805C284 760 320 800 356 762C404 712 436 820 470 782C508 741 532 822 570 794C600 772 630 808 650 792" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="320" y="900" width="260" height="12" rx="6" fill="#22d3ee" opacity="0.3"/>
+  <rect x="300" y="940" width="300" height="8" rx="4" fill="#a855f7" opacity="0.3"/>
+</svg>

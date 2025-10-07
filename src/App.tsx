@@ -17,7 +17,7 @@ import { ToastViewport, Toast, ToastTitle, ToastDescription, ToastClose } from "
 
 function Navigation(): JSX.Element {
   return (
-    <header className="sticky top-4 z-40 flex w-full justify-center px-4">
+    <header className="sticky top-4 z-40 flex w-full justify-center px-4 pb-6">
       {/* Menú principal translúcido con accesos rápidos a cada sección */}
       <nav className="glass-surface flex w-full max-w-5xl items-center justify-between rounded-full border border-white/10 px-6 py-3 shadow-xl backdrop-blur-xl">
         <div className="flex items-center gap-6 text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">

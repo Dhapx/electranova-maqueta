@@ -21,7 +21,10 @@ export function Testimonials(): JSX.Element {
   const activeTestimonial = testimonials[active];
 
   return (
-    <section id="testimonios" className="bg-gradient-to-b from-background via-background/70 to-background">
+    <section
+      id="testimonios"
+      className="scroll-mt-32 bg-gradient-to-b from-background via-background/70 to-background"
+    >
       <div className="container mx-auto grid gap-12 py-24 lg:grid-cols-[1.2fr,0.8fr] lg:items-center">
         <div className="space-y-6">
           <p className="text-xs uppercase tracking-[0.4em] text-muted-foreground">Testimonios</p>
